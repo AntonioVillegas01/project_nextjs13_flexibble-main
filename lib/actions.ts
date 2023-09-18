@@ -42,7 +42,6 @@ export const uploadImage = async (imagePath: string) => {
     throw err;
   }
 };
-
 const makeGraphQLRequest = async (query: string, variables = {}) => {
   try {
     return await client.request(query, variables);
